@@ -47,10 +47,6 @@
             android:label="@string/title_activity_homescreen"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAdD0m_LMz4xOUNjVdBhj8rDlM_1mGHeeQ" />
-
         <service android:name=".BackgroundServices" />
         <service android:name=".NotificationWrapper$NotificationActionService"/>
 
