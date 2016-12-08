@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    tools:context="com.example.bennyg.pavlokdrivingtrainerv3.settings"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="@string/zap_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvZap"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="65dp"
+        android:elevation="1dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/ic_flash_on_black_24dp"
+            android:id="@+id/ivZap"
+            android:layout_weight="0.28"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <TextView
+            android:text="@string/_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvZapV"
+            android:layout_weight="0.07"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbZap"
+            android:layout_weight="1"
+            android:progress="1"
+            android:max="10"
+            style="@android:style/Widget.Material.SeekBar"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/vibration_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbVibrate"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/ic_speaker_phone_black_24dp"
+            android:id="@+id/ivVibrate"
+            android:layout_weight="0.30"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <TextView
+            android:text="@string/_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvVibV"
+            android:layout_weight="0.07"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sbVibrate"
+            android:layout_weight="1"
+            android:progress="1"
+            android:max="10"
+            style="@android:style/Widget.Material.SeekBar"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/set_settings"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSetSettings"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/cardview_light_background"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.bennyg.pavlokdrivingtrainerv3.startBackground"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="357dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:text="@string/confirm_destination_and_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingTop="15dp" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView2"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:layout_weight="0.01" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMessage"
+            android:layout_weight="0.05"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:text="@string/start_driving"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBackground"
+            style="@android:style/Widget.Material.Button"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/cardview_light_background" />
+
+        <Button
+            android:text="@string/stop_driving"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStopService"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/cardview_light_background"
+            android:visibility="invisible" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            app:unselectedDotDiameter="10dp"
+            app:selectedDotColor="@color/colorPrimaryDark"
+            app:unselectedDotColor="@color/colorPrimary"
+            app:selectedDotDiameter="15dp"
+            app:numberOfDots="3"
+            app:selectedDotIndex="2"
+            android:gravity="bottom" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

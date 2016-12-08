@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bennyg.pavlokdrivingtrainerv3.addParent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="@string/people_you_would_like_to_notify_when_you_are_texting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvParentDirection"
+        android:lines="2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/lvParent" />
+
+    <Button
+        android:text="@string/add_parent"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAdd"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/cardview_light_background" />
+</LinearLayout>

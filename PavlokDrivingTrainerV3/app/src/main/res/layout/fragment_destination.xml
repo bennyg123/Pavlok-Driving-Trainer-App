@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.bennyg.pavlokdrivingtrainerv3.destination"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:text="@string/please_enter_a_destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDestInst"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:paddingTop="15dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="173dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="106dp"
+        android:paddingTop="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="196dp"
+            android:layout_height="101dp"
+            android:layout_weight="0.12">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/please_enter_your_destination"
+                android:id="@+id/etDest"
+                android:inputType="textMultiLine|textPostalAddress"
+                android:maxLines="3"
+                android:scrollHorizontally="false"
+                android:selectAllOnFocus="false" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:text="@string/destination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDest"
+            android:layout_weight="0.12"
+            style="@android:style/Widget.Material.Button"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/cardview_light_background" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_height="match_parent">
+
+        <com.matthewtamlin.sliding_intro_screen_library.indicators.DotIndicator
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            app:unselectedDotDiameter="10dp"
+            app:selectedDotColor="@color/colorPrimaryDark"
+            app:unselectedDotColor="@color/colorPrimary"
+            app:selectedDotDiameter="15dp"
+            app:numberOfDots="3"
+            app:selectedDotIndex="0"
+            android:gravity="bottom" />
+    </LinearLayout>
+
+</LinearLayout>
